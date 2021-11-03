@@ -1,10 +1,6 @@
 import React from 'react';
 
-
-
-
-
- const Leaders = (props) => {
+const Leaders = (props) => {
     const RenderLeaders = props.leaders.map(
       (leader) =>{
           return(
@@ -23,9 +19,7 @@ import React from 'react';
           );
       }
     );
-      
-        
-    
+       
     return(
         <div className="container">
             {RenderLeaders}

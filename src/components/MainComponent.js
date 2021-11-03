@@ -27,6 +27,7 @@ class Main extends Component {
             comments: COMMENTS,
             leaders: LEADERS,
             promotions: PROMOTIONS
+            
         };
     }
 
