@@ -1,16 +1,18 @@
-import Menu from './MenuComponent';
 import React, { Component } from 'react';
-import { DISHES } from '../shared/dishes';
-import { COMMENTS } from '../shared/comments';
-import DishDetail from './DishDetailComponent';
+import { Redirect, Route, Switch } from 'react-router';
+
+import Menu from './MenuComponent';
 import Header from './Header';
 import Footer from './Footer';
-import { Redirect, Route, Switch } from 'react-router';
+import DishDetail from './DishDetailComponent';
 import { Home } from './HomeComponent';
-import Contact from './ContactComponent';
-import { LEADERS } from '../shared/leaders';
-import { PROMOTIONS } from '../shared/promotions';
 import About from './AboutusComponent';
+import Contact from './ContactComponent';
+
+import { LEADERS } from '../shared/leaders';
+import { DISHES } from '../shared/dishes';
+import { COMMENTS } from '../shared/comments';
+import { PROMOTIONS } from '../shared/promotions';
 
 
 
