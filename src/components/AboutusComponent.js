@@ -72,4 +72,3 @@ import Leaders from './LeadersComponent'
 
 export default About;
 
-   
