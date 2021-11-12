@@ -83,15 +83,4 @@ class Main extends Component {
     export default withRouter(connect(mapStateToProps)(Main));
     
     
-    {/* <Route path="/aboutus" component={Aboutus} /> */}
-// onClick={(dishId) => this.onDishSelect(dishId)} />
-{/* <Route exact path="/menu" component={() =>  <Menu dishes={this.props.dishes} />} /> */ }
-
-
-{/* <DishDetail
-                selectedDish={this.props.dishes.filter((dish) => dish.id === this.props.selectedDish)[0]}
-                    comments={this.props.comments} /> */}
-
-                    // onDishSelect = (dishId) => {
-                    //     this.setState({ selectedDish: dishId });
-                    // }
+   
