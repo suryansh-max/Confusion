@@ -5,7 +5,7 @@ import { Breadcrumb, BreadcrumbItem,
     Button, Row, Col, Label } from 'reactstrap';
 
 import { Control, LocalForm, Errors } from 'react-redux-form';
-import MainComponent from './MainComponent';
+
 
 
 const required = (val) => val && val.length;
@@ -61,11 +61,11 @@ class Contact extends Component {
                     <div className="col-12 col-sm-4 offset-sm-1">
                         <h5>Our Address</h5>
                         <address>
-                            121, Clear Water Bay Road<br />
-                            Clear Water Bay, Kowloon<br />
-                            HONG KONG<br />
-                            <i className="fa fa-phone"></i>: +852 1234 5678<br />
-                            <i className="fa fa-fax"></i>: +852 8765 4321<br />
+                            121, Clear Water Bay Road 
+                            Clear Water Bay, Kowloon 
+                            HONG KONG 
+                            <i className="fa fa-phone"></i>: +852 1234 5678 
+                            <i className="fa fa-fax"></i>: +852 8765 4321 
                             <i className="fa fa-envelope"></i>: <a href="mailto:confusion@food.net">confusion@food.net</a>
                         </address>
                     </div>
@@ -82,7 +82,7 @@ class Contact extends Component {
                 </div>
                 <div className="row row-content">
                     <div className="col-12">
-                        <h3>Send Us Your Feedback</h3><br />
+                        <h3>Send Us Your Feedback</h3> 
                     </div>
                     <div className="col-12 col-md-9" >
                       
@@ -114,7 +114,7 @@ class Contact extends Component {
                                          />
 
                                 </Col>
-                            </Row> <br />
+                            </Row>  
                           
                             <Row className="form-group">
                                 <Label htmlFor="lastname" md={2}>Last Name</Label>
@@ -138,7 +138,7 @@ class Contact extends Component {
                                             }
                                         />
                                 </Col>
-                            </Row> <br />
+                            </Row>  
                             <Row className="form-group">
                                 <Label htmlFor="telnum" md={2}>Contact Tel.</Label>
                                 <Col md={10}>
@@ -162,7 +162,7 @@ class Contact extends Component {
                                             }/>
 
                                 </Col>
-                            </Row> <br />
+                            </Row>  
                             <Row className="form-group">
                                 <Label htmlFor="email" md={2}>Email</Label>
                                 <Col md={10}>
@@ -176,7 +176,7 @@ class Contact extends Component {
                                             required : 'Required' , isemail : 'Enter valid email'
                                         }} />
                                 </Col>
-                            </Row> <br />
+                            </Row>  
                             <Row className="form-group">
                                 <Col md={{size: 6, offset: 2}}>
                                     <div className="form-check">
@@ -195,7 +195,7 @@ class Contact extends Component {
                                         <option>Email</option>
                                     </Control.select>
                                 </Col>
-                            </Row> <br />
+                            </Row>  
                             <Row className="form-group">
                                 <Label htmlFor="message" md={2}>Your Feedback</Label>
                                 <Col md={10}>
@@ -207,14 +207,14 @@ class Contact extends Component {
                                         }} />
                                         <Errors className="text-danger" show="touched" model=".message" messages={{maxLength : 'very big feedback'}} />
                                 </Col>
-                            </Row> <br />
+                            </Row>  
                             <Row className="form-group">
                                 <Col md={{size:10, offset: 2}}>
                                     <Button type="submit" color="primary">
                                     Send Feedback
                                     </Button>
                                 </Col>
-                            </Row> <br />
+                            </Row>  
                         </LocalForm>
                     </div>
 
