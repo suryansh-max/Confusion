@@ -24,6 +24,8 @@ class CommentForm extends Component {
     HandleSumbit(values) {
         alert('Current State is: ' + JSON.stringify(values));
         console.log('handle sumbit invocked' );
+        // console.log(values.)
+        this.props.addComment(this.props.dishId , values.ratenum , values.name , values.message);
     }
 
     render() {

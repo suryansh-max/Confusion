@@ -4,7 +4,7 @@ import { Card, CardImg, CardText, CardTitle, CardBody,  Breadcrumb, BreadcrumbIt
 import CommentForm from './CommentForm';
 
 
-function RenderComments({ comments }) {
+function RenderComments({ comments , addComment , dishId }) {
 
     const list = comments.map((com) => { return( <p>-- {com.comment} author: {com.author} , {com.date} </p> ); });
    
@@ -13,7 +13,9 @@ function RenderComments({ comments }) {
             <CardBody>
                 <CardTitle tag="h4">Comments:</CardTitle>
                 <CardText>{list}</CardText>
-                <CommentForm />  
+                <CommentForm 
+                addComment={addComment} 
+                dishId={dishId}/>  
             </CardBody>
         </Card>
     )
@@ -65,7 +67,9 @@ const DishDetail = (props) => {
                     <RenderDish dish={props.dish} />
                 </div>
                 <div className="col-12 col-md-5 m-1">
-                    <RenderComments comments={props.comments} />
+                    <RenderComments comments={props.comments}
+                    addComment={props.addComment}
+                    dishId={props.dish.id} />
                     
                 </div>
             </div>
